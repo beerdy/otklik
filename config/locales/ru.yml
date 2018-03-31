@@ -1,0 +1,16 @@
+ru:
+  title: "Разработка сайтов Липецк Россия - Отклик Павер. Используем современные технологии  Bootstrap 4, Rails 5.1, MongoDB 3+"
+  hello: "День добрый"
+  slogan:
+    main: "Мы создаём сайты!"
+    slave: "И<small>СПОЛЬЗУЕМ</small> Bootstrap 4, <strong>Rails 5.1</strong>, MongoDB 3+ <small>и ЭТО ВЕРНО</small>!"
+  btn:
+    sendto: "Выслать прайс"
+    sendok: "Запрос отправлен!"
+    sender: "Ошибка попробуйте позже..."
+    sendpp: "Некорректный E-mail."
+  forms:
+    placeholder:
+      email: "Ваш email..."
+  alt:
+    logo: "Логотип - создание сайтов ОТКЛИК ПАВЕР"

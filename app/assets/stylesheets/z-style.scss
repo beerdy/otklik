@@ -1,0 +1,75 @@
+
+.or-logo {
+  .logo {
+    max-width: 320px;
+  }
+}
+
+.language {
+  top:0;
+  color: #fff;
+  position: absolute;
+  right: 34px;
+  span {
+    color: #666666;
+  }
+  a {
+    color: #666666;    
+    &:hover, &:focus {
+      color: #fff;
+    }
+  }
+}
+
+
+/*-- Telegram - re:plain --*/
+#__replain_widget {
+  bottom: 125px !important;
+  right: 34px !important;
+  height: 79% !important;
+}/*-- END Telegram - re:plain --*/
+
+
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #CC6699;
+  box-shadow: 0px 0px 0px 0.2rem rgba(204, 102, 153, 0.25);
+}
+
+
+/*-- js animated send button --*/
+.loading-gif {
+  display: none;
+  position: absolute;
+  //border: 1px solid white;
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  left:0px;
+  img {
+    padding: 7px 0 0 58px;
+    height:48px;
+  }
+}
+.js-btn-animate {
+  float: right;
+  right: 0;
+
+  position: absolute !important;
+  border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 3px !important;
+
+  &:after {
+    font-weight: 100;
+    /*
+    display: inline-block;
+    content: "\f25b";
+    font-size: 32px;
+    font-weight: 100;
+    font-family: 'FontAwesome';
+    margin-top: -12px;
+    */
+  }
+}/*-- js animated send button --*/

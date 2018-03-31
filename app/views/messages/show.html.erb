@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @message.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @message.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @message.phone %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @message.description %>
+</p>
+
+<p>
+  <strong>Document uid:</strong>
+  <%= @message.document_uid %>
+</p>
+
+<p>
+  <strong>Document name:</strong>
+  <%= @message.document_name %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @message.url %>
+</p>
+
+<p>
+  <strong>Sort:</strong>
+  <%= @message.sort %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>

@@ -1,0 +1,56 @@
+    <div class="overlay"></div>
+
+    <div class="masthead">
+      <div class="masthead-bg"></div>
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 my-auto">
+            <div class="masthead-content text-white py-5 py-md-0">
+              <h1 class="mb-3"><%= l.slogan.main %></h1>
+              <p class="mb-5"><%= l.slogan.slave.html_safe %></p>
+              
+              <%= form_with(model: @message, :remote => true) do |form| %>
+              <!-- html5 for popup validation email--><input type="hidden" id='validation-email-popup-text' value="<%= l.btn.sendpp %>"><!-- end -->
+              <div class="input-group input-group-newsletter">
+
+                <input id="message_email" type="email" class="form-control" placeholder="<%= l.forms.placeholder.email %>" aria-label="<%= l.forms.placeholder.email %>" aria-describedby="basic-addon" name="message[email]" onchange="try{setCustomValidity('')}catch(e){}">
+
+                <div class="input-group-append">
+                  <button class="btn btn-secondary send-btn" type="submit" data-remote="true">
+                    <div class="loading-gif">
+                      <%= image_tag '/assets/loader_no-cache-new.gif', alt: l.btn.sendto %>
+                    </div>
+                    <span><%= l.btn.sendto %></span>
+                  </button>
+                </div>
+              </div>
+              <% end %>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-icons or-logo">
+      <%= image_tag @headr.image1.url, class: 'img-fluid logo', alt: l.alt.logo %>
+      <!-- Social
+      <ul class="list-unstyled text-center mb-0">
+        <li class="list-unstyled-item">
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-unstyled-item">
+          <a href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li class="list-unstyled-item">
+          <a href="#">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      Social -->
+    </div> 
