@@ -85,5 +85,7 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
-  
+
+  ## Only for production. Faster work development in this directive no in config/application.rb
+  config.assets.paths << Rails.application.root.join("app", "assets")
 end

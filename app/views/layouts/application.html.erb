@@ -17,7 +17,7 @@
 
     <%= yield %>
 
-    <!-- init vide --><script type="text/javascript">(function($){"use strict";$('body').vide({mp4: "/assets/bg",poster: "/assets/bg"},{posterType: 'jpg'});})(jQuery);</script><!-- END init vide -->
+    <!-- init vide --><script type="text/javascript">(function($){"use strict";$('body').vide({mp4: "<%= asset_path('bg.mp4') %>", poster:  "<%= asset_path('bg-mobile-fallback.jpg') %>"},{posterType: 'jpg'});})(jQuery);</script><!-- END init vide -->
 
     <div class="language">
       <% if I18n.locale == I18n.default_locale %>
