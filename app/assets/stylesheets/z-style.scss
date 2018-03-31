@@ -73,3 +73,27 @@
     */
   }
 }/*-- js animated send button --*/
+
+@media all and (max-width: 992px) {
+  #__replain_widget {
+    right: 0px !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .or-logo {
+    bottom: 0px !important;
+    padding-left: 34px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .or-logo {
+    bottom: 0px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    .logo {
+      max-width: 100%;
+    }
+  }
+}
