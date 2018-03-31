@@ -26,6 +26,9 @@ Rails.application.configure do
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = Uglifier.new(harmony: true)
   # config.assets.css_compressor = :sass
+  
+  ## Only for production. Faster work development in this directive no in config/application.rb
+  config.assets.paths << Rails.application.root.join("app", "assets")
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
@@ -86,6 +89,4 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
-  ## Only for production. Faster work development in this directive no in config/application.rb
-  config.assets.paths << Rails.application.root.join("app", "assets")
 end
