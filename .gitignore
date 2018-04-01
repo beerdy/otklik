@@ -3,6 +3,8 @@
 
 ._*/*
 ._*
+.DS*/*
+.DS*
 
 tmp
 db/*.sqlite3
