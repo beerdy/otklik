@@ -14,9 +14,11 @@ class ApplicationController < ActionController::Base
   private
   def read_content
     Content.all.each do |c|
+
       @headr  = c if c.url == "headr"
       @localr = c if c.url == "localr"
       @coder  = c if c.url == "coder"
+      @logor  = c if c.url == "logor"
     end
   end
 

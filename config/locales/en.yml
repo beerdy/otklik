@@ -1,5 +1,10 @@
 en:
   title: "Web Development Lipetsk Russia - Otklik Power. We use modern technologies Bootstrap 4, Rails 5.1, MongoDB 3+"
+  meta:
+    og:
+      title: "Web Development by «OTKLIK POWER»"
+      description: "Company «OTKLIK POWER» is develop Internet projects based on modern web technologies"
+      site_name: "OTKLIK POWER - we make future"
   hello: "Hello world"
   slogan:
     main: "We web developers!"
