@@ -5,6 +5,18 @@
     <%= csrf_meta_tags %>
     <meta http-equiv="Content-language" content="<%=I18n.locale%>">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:locale" content="ru_RU"/>
+    <meta >
+    
+    <!-- Meta TAGS for social-->
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Компания «ОТКЛИК ПАВЕР» разработка интернет-проектов"/>
+    <meta property="og:description" content="Компания «ОТКЛИК ПАВЕР» — занимается разработкой интернет-проектов в основе которых лежат современные web-технологии"/>
+    <meta property="og:image" content="<%= @headr.image1.url %>"/>
+    <meta property="og:url" content="<%= request.original_url %>"/>
+    <meta property="og:site_name" content="«ОТКЛИК ПАВЕР» — реализуем будующие"/>
+    <!-- END Meta TAGS for social-->
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
