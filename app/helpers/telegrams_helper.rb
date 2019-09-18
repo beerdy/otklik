@@ -1,2 +1,2 @@
-module TelegramHelper
+module TelegramsHelper
 end
