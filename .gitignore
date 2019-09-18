@@ -3,6 +3,8 @@
 
 ._*/*
 ._*
+.DS*/*
+.DS*
 
 tmp
 db/*.sqlite3
@@ -43,3 +45,4 @@ public/system
 config/initializers/secret_token.rb
 config/secrets.yml
 config/puma.rb
+config/initializers/auth_rails_admin.rb
