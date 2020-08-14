@@ -77,6 +77,12 @@
     */
   }
 }/*-- js animated send button --*/
+@media only screen and (min-width: 896px) and (orientation: landscape) { 
+    .center-block {
+      vertical-align: bottom;
+      padding-bottom: 20px;
+    }
+}
 @media all and (max-width: 992px) {
   #__replain_widget {
     right: 0px !important;
