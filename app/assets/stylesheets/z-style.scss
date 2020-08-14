@@ -79,13 +79,20 @@
     right: 0px !important;
   }
 }
-
+@media all and (max-width: 768px) {
+  .slavehead {
+    position:relative;
+    background-color: #4f0a29;
+    
+  }
+}
 @media all and (max-width: 768px) {
   .or-logo {
     bottom: 0px !important;
     padding-left: 34px;
   }
 }
+
 
 @media all and (max-width: 360px) {
   .or-logo {

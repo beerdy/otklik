@@ -30,8 +30,26 @@
           </div>
         </div>
       </div>
-    </div>
 
+    </div>
+    <div class="slavehead">
+      
+        <div class="row h-100">
+
+          <div class="offset-md-4 col-md-8 offset-sm-0 col-sm-12 my-auto content">
+            <div class="projects">
+              <div class="center-block">
+                <div class="tcontent">
+                  <% Project.all.each do |project| %>
+                  <span style="font-size: <%=Random.new().rand(14..21)%>pt; background-color: rgba(182, 15, 93, 0.<%=Random.new().rand(2..8)%> ); "><a href="<%=project.link%>" target="_blank"><%=project.title.upcase%></a></span>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
     <div class="social-icons or-logo">
       <%= image_tag @headr.image1.url, class: 'img-fluid logo', alt: l.alt.logo %>
       <!-- Social

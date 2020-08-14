@@ -8,6 +8,7 @@
     <meta name="robots" content="index, follow">
     
     <!-- Meta TAGS for social-->
+    <% if Rails.env.production? %>
     <meta property="og:locale" content="<%=I18n.locale%>"/>
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="<%= l.meta.og.title %>"/>
@@ -15,6 +16,7 @@
     <meta property="og:image" content='<%= "#{request.protocol}#{request.host_with_port}#{@logor.image1.url}" %>'/>
     <meta property="og:url" content="<%= request.original_url %>"/>
     <meta property="og:site_name" content="<%= l.meta.og.site_name %>"/>
+    <% end %>
     <!-- END Meta TAGS for social-->
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -22,6 +24,28 @@
   </head>
 
   <body>
+
+
+</head>
+<body>
+
+<!-- <div class="scrollmenu">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+  <a href="#tools">Tools</a>  
+  <a href="#base">Base</a>
+  <a href="#custom">Custom</a>
+  <a href="#more">More</a>
+  <a href="#logo">Logo</a>
+  <a href="#friends">Friends</a>
+  <a href="#partners">Partners</a>
+  <a href="#people">People</a>
+  <a href="#work">Work</a>
+</div> -->
     <!-- Preloader -->
     <div id="preloader">
       <div id="status">&nbsp;</div>

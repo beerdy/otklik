@@ -43,7 +43,69 @@ body {
   overflow: hidden;
   padding-bottom: 3rem;
 }
+.slavehead {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  // border: 1px solid red;
+  top: 0;
+  .row {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .zero {
+    // border: 1px solid white;
+    height: 100%
+  }
+  .content {
+    // border: 1px solid blue; 
+    height: 100%;
+    .projects {
+      // border: 1px solid red;
+      display: table;
+      height: 100%;
+      width: 100%;
+      .center-block {
+        display: table-cell;
+        // border: 1px solid lightcyan;
+        height: 300px;
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+.tcontent {
+  // border: 1px solid firebrick;
+  max-width: 375px;
+  display: inline-block;
+}
+.tcontent span, .proeff span {
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  display: inline-block;
+  padding: 3px 8px;
+  margin: 3px;
+  color: #fff;
+  a {
+    color: #fff;
+    text-decoration: none;
 
+  }
+  &:hover {
+    -o-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    -moz-transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+    transform: scale(1.36);
+    background-color: #B60F5D !important;
+
+  }
+}
+
+        
 .masthead .masthead-bg {
   position: absolute;
   top: 0;
