@@ -23,6 +23,7 @@
                     <span><%= l.btn.sendto %></span>
                   </button>
                 </div>
+                <%= image_tag @headr.image1.url, class: 'img-fluid logo mp', alt: l.alt.logo %>
               </div>
               <% end %>
 
@@ -51,7 +52,7 @@
       
     </div>
     <div class="social-icons or-logo">
-      <%= image_tag @headr.image1.url, class: 'img-fluid logo', alt: l.alt.logo %>
+      <%= image_tag @headr.image1.url, class: 'img-fluid logo pc', alt: l.alt.logo %>
       <!-- Social
       <ul class="list-unstyled text-center mb-0">
         <li class="list-unstyled-item">

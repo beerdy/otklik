@@ -21,6 +21,10 @@
   }
 }
 
+.mp {
+  display: none;
+  margin-top: 20px;
+}
 
 /*-- Telegram - re:plain --*/
 #__replain_widget {
@@ -88,6 +92,12 @@
   .or-logo {
     bottom: 0px !important;
     padding-left: 34px;
+  }
+  .pc {
+    display: none;
+  }
+  .mp {
+    display: block;
   }
 }
 
